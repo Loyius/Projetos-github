@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$Câmbioconv</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Nunito:wght@300;400;500&family=Rubik:wght@300&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>
+        <h1>$Câmbioconv</h1>
+    </header>
+
+    <main>
+        <form id="form">
+            <section class="inputs">
+                <div class="form-group">
+                    <label for="value-real" id="values">Valor a ser convertido (R$)</label>
+                    <input type="number" placeholder="R$10,00" id="value-real" name="value-real">
+                </div>
+                    <div class="form-group">
+                        <label for="" id="values">Escolha a moeda</label>
+                        <select name="currency" id="currency">
+                            <option value="">Selecione</option>
+                            <option value="euro">Euro</option>
+                            <option value="dolar">Dólar</option>
+                        </select>
+                    </div>
+            </section>
+
+        <button type="submit">Converter</button>
+            </form>            
+                <h2 id="result"></h2>
+            </main>
+    <footer>
+        <span>
+            &copy; $Câmbioconv
+        </span>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
